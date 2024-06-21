@@ -1,46 +1,3 @@
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 9
-
-Conversion time: 3.65 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β36
-* Thu Jun 20 2024 17:49:33 GMT-0700 (PDT)
-* Source doc: Paper
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 9.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
 **Abstract**
 
 Motion, particularly from breathing, compromises the quality of magnetic resonance images. In this work, we hypothesize that detected breathing patterns can be utilized to predict whether adequate MR image quality will be obtained. With a K-means clustering algorithm, 9 in 10 40-second breathing waveforms were correctly predicted as either resulting in a high or low quality image; this finding can save time from unnecessary scans. Other models achieved similar results as K-means clusterings.
@@ -57,15 +14,11 @@ In this work, we hypothesize that detected breathing patterns can be utilized to
 
 Abdominal scans from pediatric patients scanned at our institution over an eighteen month period that utilized a post-contrast motion-robust non-Cartesian scan were retrospectively identified with IRB approval and waived consent. The pulse sequence was a spoiled gradient echo with an intermittent spectrally-selective fat suppression pulse. The k-space trajectory was a cones pattern with a golden angle ordering [10]. Slice thickness and field of view were adjusted to fit patient size. Bandwidth of 125 kHz and flip angle of 15 degrees were utilized. Image reconstruction consisted of gridding followed by fourier transform. 
 
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image1.png "image_tooltip")
 
-
 _Figure 1. Left: 1000 data point segment from representative breathing waveform. Right: corresponding autocorrelation function._
+
+![alt_text](images/image2.png "image_tooltip")
 
 _Figure 2. Example image quality scores of 1-5._
 
@@ -90,33 +43,21 @@ A radial Bessel function (RBF) kernel support vector classifier was trained on 6
 With K-means clustering (Fig. 3), we see not only the separability of the high and low quality labeled waveforms but also that the separation of unlabeled data mirrors the separation of high and low quality labeled waveforms. This visualization suggests that the breathing waveforms corresponding with high and low quality images exhibit differences on average. 
 
 
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image2.png "image_tooltip")
+![alt_text](images/image3.png "image_tooltip")
 
 
 _Figure 3. K-means clustering (k = 2) on a principal component analysis on 1000-data-point segment length labeled with green and orange representing high and low quality labels, respectively. Unlabeled waveform clusters are shown in faded gray and cyan. Here, we qualitatively establish that the breathing waveforms are mathematically separable into high and low quality categories._
 
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
+![alt_text](images/image4.png "image_tooltip")
 
 
-_Figure 4. The effect of respiratory waveform segment length on best accuracy over a range of number of clusters. A segment length of at least 1000 points long, or 40 seconds of breathing, was sufficient to maximize prediction accuracy. _
+_Figure 4. The effect of respiratory waveform segment length on best accuracy over a range of number of clusters. A segment length of at least 1000 points long, or 40 seconds of breathing, was sufficient to maximize prediction accuracy._
 
 Prediction accuracy was minimally dependent on segment length, as shown in Figure 4. At 1000 datapoints in the waveform, approximately 90% accuracy is achieved. Beyond 1000 datapoints, no significant increase in accuracy was observed. As datapoints are separated by 40 ms, 40 seconds of breathing waveform sampling suffices. Compared to a typical scan that lasts about four to five minutes, an image quality prediction in under a minute offers the opportunity to save several minutes of wasted scan time.
 
 
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
+![alt_text](images/image5.png "image_tooltip")
 
 
 _Figure 5. Accuracy as a function of number of clusters, with standard deviation estimation from 100 trials per cluster number. In each trial, the k-means clustering model was trained on 300 randomly selected unlabeled waveforms. Although a ten-cluster model achieved the highest performance, its difference to a three-cluster model was statistically insignificant. More clusters did not necessarily better categorize the waveform dataset._
@@ -124,43 +65,29 @@ _Figure 5. Accuracy as a function of number of clusters, with standard deviation
 Optimal accuracy was obtained with ten clusters, as shown in Figure 5. However, the improvement in accuracy over a simpler model with three clusters was relatively minimal. In this experiment, a segment length of 1000 points was used, as it was a relative maximum of the graph in Figure 4. Note that model performance is relatively repeatable, with narrow error bars. For a subset of the number of clusters (two, three, four, and five), the distribution accuracies from repeatedly retraining the model is shown in Figure 6. 
 
 
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image5.png "image_tooltip")
+![alt_text](images/image6.png "image_tooltip")
 
 
 _Figure 6. Distribution of accuracy from 100 trials of repeated training of the model in the case of the models with fewer clusters. Since random segments of waveforms were utilized in each trial of training the model, variability in the accuracy of the model can be assessed, as displayed in the error bars in Figure 5._
 
 
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image6.png "image_tooltip")
-
-
-_Figure 7. Support vector machine (with linear kernel) trained and plotted against labeled data. Circled points indicate support vectors. All labeled datapoints are shown. This separation’s division shows a similarity to that in Fig. 3 and hence corresponds to a similar performance. _
-
-A support vector classifier was also qualitatively compared to the k-means clustering algorithm. The unsupervised k-means clustering algorithm was trained on the unlabeled dataset leaving the labeled dataset for testing purposes, whereas the supervised SVM required the labeled data only. Fig. 7 indicates that the support vector machine with a linear kernel can achieve good classification; equivalent accuracy was obtained compared to a 2-cluster model (Fig. 3). 
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](images/image7.png "image_tooltip")
 
 
-_Figure 8. Recall and precision for 2000 trials using the radial Bessel function kernel support vector classifier. _
+_Figure 7. Support vector machine (with linear kernel) trained and plotted against labeled data. Circled points indicate support vectors. All labeled datapoints are shown. This separation’s division shows a similarity to that in Fig. 3 and hence corresponds to a similar performance._
+
+A support vector classifier was also qualitatively compared to the k-means clustering algorithm. The unsupervised k-means clustering algorithm was trained on the unlabeled dataset leaving the labeled dataset for testing purposes, whereas the supervised SVM required the labeled data only. Fig. 7 indicates that the support vector machine with a linear kernel can achieve good classification; equivalent accuracy was obtained compared to a 2-cluster model (Fig. 3). 
+
+
+![alt_text](images/image8.png "image_tooltip")
+
+
+_Figure 8. Recall and precision for 2000 trials using the radial Bessel function kernel support vector classifier._
 
 Using a Radial Bessel function (RBF) kernel for the SVM (Fig. 8) shows similar quantitative results to Fig. 5 and Fig. 6. 
 
 
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image8.png "image_tooltip")
+![alt_text](images/image9.png "image_tooltip")
 
 
 _Figure 9. Parameter (gamma and C) optimization for the radial Bessel function kernel support vector machine. The C value determines the acceptable error for the decision boundary, while gamma controls the curvature of the decision boundary. From this grid, we conclude that the breathing waveforms were best separated into high and low image quality categories with low gamma, or a decision boundary with less curvature._
@@ -168,11 +95,7 @@ _Figure 9. Parameter (gamma and C) optimization for the radial Bessel function k
 Finally, optimization of the RBF’s (nonlinear kernel) C and gamma values demonstrated that decision boundary with less curvature had higher performance (Figs. 9 and 10). 
 
 
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image9.png "image_tooltip")
+![alt_text](images/image10.png "image_tooltip")
 
 
 _Figure 10. A re-run of values within the cyan rectangle of Fig. 9. This grid further suggests that the low curvature best divides the data and indicates that a C-value was less of a determining factor for performance._
